@@ -3,36 +3,61 @@
   box-sizing: border-box;
   border: thin solid beige;
 } */
-#menu {
+/*   top: 0%;
   background-color: #white;
   color: black;
   text-align: right;
-
+  background-color: gray;
 }
 
 #menu > ul {
+  top:0%;
   margin: 0;
   padding: 0;
   list-style-type: none;
+
 }
 
  #menu > ul > li {
+  top:0%;
+  right: -475%;
   display: inline-block;
   padding: 0.2em;
-}
-#telefonologin {
-  background-color: #white;
+  background-color: gray;
+}*/
+#menu {
+  position: absolute;
+  top:50px;
+  background-color: white;
   color: black;
-  text-align: right;
+  left: 1315px
 }
 
-#telefonologin > ul {
+#menu > ul {
+  position: relative;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
+#menu > ul > li {
+  position: relative;
+  display: inline-block;
+  padding: 0.2em;
+}
+
+#telefonologin {
+  position: absolute;
+  top:0%;
+  color: black;
+  text-align: right;
+
+}
+
 #telefonologin > ul > li {
+  position: relative;
+  top:0%;
+  right: -475%;
   display: inline-block;
   padding: 0.2em;
 }
@@ -44,34 +69,33 @@
     width: 20px;
 }
 .titulo{
+  position: absolute;
+  top: 0%;
+
+}
+.lupa{
+      vertical-align: middle;
+      max-height: 25px;
+      max-width: 160px;
+      height: 20px;
+      width: 20px;
+
+}
+.monigote{
+  vertical-align: middle;
+  max-height: 25px;
+  max-width: 160px;
+  height: 20px;
+  width: 20px;
+
+}
+.berdesito{
+  background-color: #55ff00;
+}
+.titulo{
   color:green;
 }
-#footer {
-  background-color: #32373a;
-  color: gray;
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
-}
 
-#footer h6 {
-  font-size: 1em;
-}
-
-#footer ul {
-  font-size: 0.8em;
-}
-
-
-.footer-columns {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-.footer-column ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
 
 @media (max-width: 1024px) {
 
@@ -103,3 +127,133 @@
 
 }
 background image
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat+Alternates);
+
+* {
+    margin:0;
+    padding:0;
+    font:12pt Arial;
+}
+
+
+
+.field {
+  display:flex;
+  position:realtive;
+  margin:5em auto;
+  width:70%;
+  flex-direction:row;
+  box-shadow:
+   1px 1px 0 rgb(22, 160, 133),
+   2px 2px 0 rgb(22, 160, 133),
+   3px 3px 0 rgb(22, 160, 133),
+   4px 4px 0 rgb(22, 160, 133),
+   5px 5px 0 rgb(22, 160, 133),
+   6px 6px 0 rgb(22, 160, 133),
+   7px 7px 0 rgb(22, 160, 133)
+  ;
+}
+
+.field>input[type=text],
+.field>button {
+  display:block;
+  font:1.2em 'Montserrat Alternates';
+  position: absolute;
+  top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.field>input[type=text] {
+  flex:1;
+  padding:0.6em;
+  border:0.2em solid rgb(26, 188, 156);
+  position: absolute;
+
+  top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+
+}
+
+.field>button {
+  padding:0.6em 0.8em;
+  background-color:rgb(26, 188, 156);
+  color:white;
+  border:none;
+  position: absolute;
+  top: 50%;
+  left: 55.7%;
+  transform: translate(-50%, -50%);
+}
+.contenedorimagen{
+  background-image: linear-gradient(180deg, black, black);
+}
+.fondogrande {
+  position: relative;
+  opacity: 0.5;
+}
+.textodefoto{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:green;
+  font-weight: 700;
+  font-size: 60px;
+}
+.textodefoto2{
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:white;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.card{
+  right: 1400px;
+  bottom: px;
+  text-align: center;
+}
+.card2{
+  position: absolute;
+  right: 150px;
+  top: 1073px;
+}
+.card3{
+  position: absolute;
+  left: 150px;
+  top: 1073px;
+}
+.Tododentro{
+  background-color: grey;
+}
+/*#footer {
+  background-color: #32373a;
+  color: gray;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+
+#footer h6 {
+  font-size: 1em;
+}
+
+#footer ul {
+  font-size: 0.8em;
+}
+
+
+.footer-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer-column ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}*/
