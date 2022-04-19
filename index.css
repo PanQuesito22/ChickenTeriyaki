@@ -1,724 +1,98 @@
-/* Declaring custom properties */
-/* {
-  box-sizing: border-box;
-  border: thin solid beige;
-} */
-/*   top: 0%;
-  background-color: #white;
-  color: black;
-  text-align: right;
-  background-color: gray;
+Declaring custom properties */
+* {
+ box-sizing: border-box;
+
+ /* border: thin solid green ; */
 }
 
-#menu > ul {
-  top:0%;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
 
+
+.logo {
+ height: 128px;
+margin-left: 200px;
 }
 
- #menu > ul > li {
-  top:0%;
-  right: -475%;
-  display: inline-block;
-  padding: 0.2em;
-  background-color: gray;
-*/
+
 #menu {
-  position: absolute;
-  top:50px;
-  background-color: white;
-  color: black;
-  left: 1315px
+ background-color: rgba(248,248,248,255);
+ color: black;
+ text-align: center;
+
+
 }
 
 #menu > ul {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+ margin: 0;
+ padding: 0;
+ list-style-type: none;
+
 }
 
 #menu > ul > li {
-  position: relative;
-  display: inline-block;
-  padding: 0.2em;
-}
-
-#telefonologin {
-  position: absolute;
-  top:0%;
-  color: black;
-  text-align: right;
+ display: inline-block;
+ padding: 0.99em;
+ text-align: middle;
 
 }
 
-#telefonologin > ul > li {
-  position: relative;
-  top:0%;
-  right: -475%;
-  display: inline-block;
-  padding: 0.2em;
-}
-.telefono {
-    vertical-align: middle;
-    max-height: 25px;
-    max-width: 160px;
-    height: 20px;
-    width: 20px;
-}
-.titulo{
-  position: absolute;
-  top: 0%;
 
-}
-.lupa{
-      vertical-align: middle;
-      max-height: 25px;
-      max-width: 160px;
-      height: 20px;
-      width: 20px;
-
-}
-.monigote{
-  vertical-align: middle;
-  max-height: 25px;
-  max-width: 160px;
-  height: 20px;
-  width: 20px;
-
-}
-.berdesito{
-  background-color: #55ff00;
-}
-.titulo{
-  color:green;
-}
-
-
-@media (max-width: 1024px) {
-
-  #menu > ul > li {
-    display: block;
-    padding: 0.2em;
-  }
-
-  #search-bar {
-    float: none;
-    border-left: none !important;
-  }
-
-  #main {
-    grid-template-columns: 1fr;
-  }
-
-  #content {
-    grid-template-columns: 1fr;
-  }
-
-  #footer {
-    grid-template-columns: 1fr;
-  }
-
-  .footer-columns {
-    grid-template-columns: 1fr;
-  }
-
-}
-background image
-
-@import url(http://fonts.googleapis.com/css?family=Montserrat+Alternates);
-
-* {
-    margin:0;
-    padding:0;
-    font:12pt Arial;
+#banner {
+ padding: 1em;
 }
 
 
 
-.field {
-  display:flex;
-  position:realtive;
-  margin:5em auto;
-  width:70%;
-  flex-direction:row;
-  box-shadow:
-   1px 1px 0 rgb(22, 160, 133),
-   2px 2px 0 rgb(22, 160, 133),
-   3px 3px 0 rgb(22, 160, 133),
-   4px 4px 0 rgb(22, 160, 133),
-   5px 5px 0 rgb(22, 160, 133),
-   6px 6px 0 rgb(22, 160, 133),
-   7px 7px 0 rgb(22, 160, 133)
-  ;
-}
-
-.field>input[type=text],
-.field>button {
-  display:block;
-  font:1.2em 'Montserrat Alternates';
-  position: absolute;
-  top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-}
-
-.field>input[type=text] {
-  flex:1;
-  padding:0.6em;
-  border:0.2em solid rgb(26, 188, 156);
-  position: absolute;
-
-  top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
+.cuadrado-gris {
+  background-color: #afaead ;
 
 }
-
-.field>button {
-  padding:0.6em 0.8em;
-  background-color:rgb(26, 188, 156);
-  color:white;
-  border:none;
-  position: absolute;
-  top: 50%;
-  left: 55.7%;
-  transform: translate(-50%, -50%);
+.abajo2{
+  color:blue;
 }
-.contenedorimagen{
+
+.centered {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ font-weight: bold;
+ font-size: 40px;
+ color: white;
+}
+
+.boton-amarillo {
+ background-color:  #ffe400 ;
+ position: absolute;
+ top: 70%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ font-weight: bold;
+ font-size: 40px;
+ color: white;
+}
+
+
+.imagenplana{
   background-image: linear-gradient(180deg, black, black);
 }
 .fondogrande {
   position: relative;
   opacity: 0.5;
 }
-.textodefoto{
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color:green;
-  font-weight: 700;
-  font-size: 60px;
+
+.imagenplana{
+  position: relative;
 }
-.textodefoto2{
+.centrartodo{
   position: absolute;
-  top: 35%;
+  background-color: black;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 1em 3em;
+}
+
+.titulocentrado{
   color:white;
-  font-weight: 700;
-  font-size: 30px;
-}
-
-.card{
-  right: 1400px;
-  bottom: px;
-  text-align: center;
-}
-.card2{
-  position: absolute;
-  right: 150px;
-  top: 1073px;
-}
-.card3{
-  position: absolute;
-  left: 150px;
-  top: 1073px;
-}
-.Tododentro{
-  background-color: grey;
-}
-#footer {
-  background-color: #32373a;
-  color: gray;
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
-}
-
-#footer h6 {
-  font-size: 1em;
-}
-
-#footer ul {
-  font-size: 0.8em;
-}
-
-
-.footer-columns {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-.footer-column ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.salchicha {
-background-color: gray;
-  text-align: center;
-}
-
-
-.menu {
- overflow: hidden;
- background-color: white;
- color: black;
- font-family: Arial;
-}
-
-
-.menu a {
- float: left;
- font-size: 16px;
- color:black;
- text-align: center;
- padding: 14px 16px;
- text-decoration: none;
-}
-
-
-.lado {
- float: left;
- overflow: hidden;
-}
-
-.lado .dropbtn {
- font-size: 16px;
- border: none;
- outline: none;
- color: black;
- padding: 14px 16px;
- background-color: white;
- font-family: inherit;
- margin: 0;
-}
-
-
-.navbar a:hover, .dropdown:hover .dropbtn {
- background-color: red;
-}
-
-
-.lado-content {
- display: none;
- position: absolute;
- background-color: white;
- min-width: 160px;
- box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
- z-index: 1;
-}
-
-
-.lado-content a {
- float: none;
- color: black;
- padding: 12px 16px;
- text-decoration: none;
- display: block;
- text-align: left;
-}
-
-
-.dropdown-content a:hover {
- background-color: white;
-}
-
-
-.dropdown:hover .dropdown-content {
- display: block;
-}
-
-.dropbtn {
-margin-right: 200px;
-
-}
-
-
-
-#cositas {
-
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-
-
-.Universidades img {
-max-width: 60px;
-height: 100px
-
-}
-
-
-.videos {
-background-color: white;
-  text-align: center;
-}
-@media(max-width:1024px){
-  /* Declaring custom properties */
-  /* {
-    box-sizing: border-box;
-    border: thin solid beige;
-  } */
-  /*   top: 0%;
-    background-color: #white;
-    color: black;
-    text-align: right;
-    background-color: gray;
-  }
-
-  #menu > ul {
-    top:0%;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-
-  }
-
-   #menu > ul > li {
-    top:0%;
-    right: -475%;
-    display: inline-block;
-    padding: 0.2em;
-    background-color: gray;
-  */
-  #menu {
-    position: absolute;
-    top:50px;
-    background-color: white;
-    color: black;
-    left: 1315px
-  }
-
-  #menu > ul {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-  }
-
-  #menu > ul > li {
-    position: relative;
-    display: inline-block;
-    padding: 0.2em;
-  }
-
-  #telefonologin {
-    position: absolute;
-    top:0%;
-    color: black;
-    text-align: right;
-
-  }
-
-  #telefonologin > ul > li {
-    position: relative;
-    top:0%;
-    right: -475%;
-    display: inline-block;
-    padding: 0.2em;
-  }
-  .telefono {
-      vertical-align: middle;
-      max-height: 25px;
-      max-width: 160px;
-      height: 20px;
-      width: 20px;
-  }
-  .titulo{
-    position: absolute;
-    top: 0%;
-
-  }
-  .lupa{
-        vertical-align: middle;
-        max-height: 25px;
-        max-width: 160px;
-        height: 20px;
-        width: 20px;
-
-  }
-  .monigote{
-    vertical-align: middle;
-    max-height: 25px;
-    max-width: 160px;
-    height: 20px;
-    width: 20px;
-
-  }
-  .berdesito{
-    background-color: #55ff00;
-  }
-  .titulo{
-    color:green;
-  }
-
-
-  @media (max-width: 1024px) {
-
-    #menu > ul > li {
-      display: block;
-      padding: 0.2em;
-    }
-
-    #search-bar {
-      float: none;
-      border-left: none !important;
-    }
-
-    #main {
-      grid-template-columns: 1fr;
-    }
-
-    #content {
-      grid-template-columns: 1fr;
-    }
-
-    #footer {
-      grid-template-columns: 1fr;
-    }
-
-    .footer-columns {
-      grid-template-columns: 1fr;
-    }
-
-  }
-  background image
-
-  @import url(http://fonts.googleapis.com/css?family=Montserrat+Alternates);
-
-  * {
-      margin:0;
-      padding:0;
-      font:12pt Arial;
-  }
-
-
-
-  .field {
-    display:flex;
-    position:realtive;
-    margin:5em auto;
-    width:70%;
-    flex-direction:row;
-    box-shadow:
-     1px 1px 0 rgb(22, 160, 133),
-     2px 2px 0 rgb(22, 160, 133),
-     3px 3px 0 rgb(22, 160, 133),
-     4px 4px 0 rgb(22, 160, 133),
-     5px 5px 0 rgb(22, 160, 133),
-     6px 6px 0 rgb(22, 160, 133),
-     7px 7px 0 rgb(22, 160, 133)
-    ;
-  }
-
-  .field>input[type=text],
-  .field>button {
-    display:block;
-    font:1.2em 'Montserrat Alternates';
-    position: absolute;
-    top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  }
-
-  .field>input[type=text] {
-    flex:1;
-    padding:0.6em;
-    border:0.2em solid rgb(26, 188, 156);
-    position: absolute;
-
-    top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  }
-
-  .field>button {
-    padding:0.6em 0.8em;
-    background-color:rgb(26, 188, 156);
-    color:white;
-    border:none;
-    position: absolute;
-    top: 50%;
-    left: 55.7%;
-    transform: translate(-50%, -50%);
-  }
-  .contenedorimagen{
-    background-image: linear-gradient(180deg, black, black);
-  }
-  .fondogrande {
-    position: relative;
-    opacity: 0.5;
-  }
-  .textodefoto{
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color:green;
-    font-weight: 700;
-    font-size: 60px;
-  }
-  .textodefoto2{
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color:white;
-    font-weight: 700;
-    font-size: 30px;
-  }
-
-  .card{
-    right: 1400px;
-    bottom: px;
-    text-align: center;
-  }
-  .card2{
-    position: absolute;
-    right: 150px;
-    top: 1073px;
-  }
-  .card3{
-    position: absolute;
-    left: 150px;
-    top: 1073px;
-  }
-  .Tododentro{
-    background-color: ;
-  }
-  #footer {
-    background-color: #32373a;
-    color: gray;
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-  }
-
-  #footer h6 {
-    font-size: 1em;
-  }
-
-  #footer ul {
-    font-size: 0.8em;
-  }
-
-
-  .footer-columns {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-
-  .footer-column ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .salchicha {
-  background-color: gray;
-    text-align: center;
-  }
-
-
-  .menu {
-   overflow: hidden;
-   background-color: white;
-   color: black;
-   font-family: Arial;
-  }
-
-
-  .menu a {
-   float: left;
-   font-size: 16px;
-   color:black;
-   text-align: center;
-   padding: 14px 16px;
-   text-decoration: none;
-  }
-
-
-  .lado {
-   float: left;
-   overflow: hidden;
-  }
-
-  .lado .dropbtn {
-   font-size: 16px;
-   border: none;
-   outline: none;
-   color: black;
-   padding: 14px 16px;
-   background-color: white;
-   font-family: inherit;
-   margin: 0;
-  }
-
-
-  .navbar a:hover, .dropdown:hover .dropbtn {
-   background-color: red;
-  }
-
-
-  .lado-content {
-   display: none;
-   position: absolute;
-   background-color: white;
-   min-width: 160px;
-   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-   z-index: 1;
-  }
-
-
-  .lado-content a {
-   float: none;
-   color: black;
-   padding: 12px 16px;
-   text-decoration: none;
-   display: block;
-   text-align: left;
-  }
-
-
-  .dropdown-content a:hover {
-   background-color: white;
-  }
-
-
-  .dropdown:hover .dropdown-content {
-   display: block;
-  }
-
-  .dross {
-  margin-right: 200px;
-
-  }
-
-
-
-  #cositas {
-
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-
-
-  .Universidades img {
-  max-width: 60px;
-  height: 100px
-
-  }
-
-
-  .videos {
-  background-color: white;
-    text-align: center;
-  }
 }
